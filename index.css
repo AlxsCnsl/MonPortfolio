@@ -29,7 +29,6 @@
     }
 
     .about{
-        margin-top: 180px;
         padding: 10px;
     }
 
@@ -68,6 +67,8 @@
     #navigation_bar {
         padding: 0;
     }
+
+
 
 }
 
@@ -139,7 +140,7 @@ header nav {
 
 /* Sections */
 section {
-    padding: 150px 0; /* Pour compenser le header fixe */
+    padding: 100px 0; /* Pour compenser le header fixe */
 }
 
 h2 {
@@ -150,6 +151,10 @@ h2 {
 .about .blabla, .project-list p {
     max-width: 800px;
     line-height: 1.6;
+}
+
+.about {
+    padding-top: 150px;
 }
 
 /* Projects */
