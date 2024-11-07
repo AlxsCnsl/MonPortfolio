@@ -1,0 +1,223 @@
+.image-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden;
+  }
+
+@font-face {
+    font-family: 'NerdFont';
+    src: url('/fonts/0xProtoNerdFontMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NerdFont2';
+    src: url('/fonts/BigBlueTerm437NerdFontMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+
+    html{
+        font-size: small;
+    }
+    .nav {
+      flex-direction: column;
+    }
+
+    .about{
+        margin-top: 180px;
+        padding: 10px;
+    }
+
+    .project {
+        padding: 10px ;
+    }
+
+    .project a{
+        font-size: small;
+    }
+
+    .skills {
+        padding: 10px;
+    }
+
+    .container nav  {
+        margin: 0;
+    }
+
+    .container ul{
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .image-circle {
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+      }
+    
+    .nav_choice{
+        padding: 5px;
+    }
+
+    #navigation_bar {
+        padding: 0;
+    }
+
+}
+
+   
+html{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: NerdFont, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #212121;
+    color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    display: inline-block;
+}
+
+header nav {
+    margin-left: 100px;
+    display: inline-block;
+}
+
+#navigation_bar {
+    list-style: none;
+    display: flex;
+}
+
+#navigation_bar li a {
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    transition: background-color 0.5s ease, border-radius 0.5s ease;
+}
+
+#navigation_bar li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.nav_choice{
+    padding: 2%;
+}
+
+/* Sections */
+section {
+    padding: 150px 0; /* Pour compenser le header fixe */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about .blabla, .project-list p {
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Projects */
+.projects .project-list {
+    display: grid;
+    gap: 20px;
+}
+
+.project {
+    background-color: #ffffff22;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 1s ease, box-shadow 1s ease;
+}
+
+
+.project:hover{
+    background-color: #ffffff40;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.481);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #74b7ff;
+}
+
+/* Skills */
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills li {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Contact */
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #74b7ff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
